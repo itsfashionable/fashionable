@@ -1,131 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Fashionable</title>
-<style>
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #111; /* very dark grey/black */
-    color: #eee; /* light grey/white */
-  }
-  header {
-    text-align: center;
-    padding: 3rem 1rem;
-    border-bottom: 1px solid #444;
-  }
-  header h1 {
-    font-size: 3rem;
-    margin: 0;
-    letter-spacing: 2px;
-  }
-  header p {
-    color: #bbb;
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
-  }
-  main {
-    max-width: 900px;
-    margin: 3rem auto;
-    padding: 0 1rem;
-  }
-  section.products {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    gap: 2rem;
-  }
-  .product {
-    background: #222;
-    border: 1px solid #444;
-    border-radius: 8px;
-    padding: 1.5rem;
-    text-align: center;
-    transition: border-color 0.3s ease;
-  }
-  .product:hover {
-    border-color: #eee;
-  }
-  .product img {
-    max-width: 100%;
-    border-radius: 6px;
-  }
-  .product h3 {
-    margin: 1rem 0 0.5rem;
-    font-weight: normal;
-    color: #fff;
-  }
-  .product p {
-    color: #aaa;
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
-  }
-  .product a {
-    text-decoration: none;
-    color: #eee;
-    background: #444;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    display: inline-block;
-    transition: background-color 0.3s ease;
-  }
-  .product a:hover {
-    background: #666;
-  }
-  footer {
-    text-align: center;
-    padding: 2rem 1rem;
-    color: #666;
-    border-top: 1px solid #444;
-    font-size: 0.9rem;
-  }
-  @media (max-width: 400px) {
-    header h1 {
-      font-size: 2rem;
+  <meta charset="UTF-8">
+  <title>FASHIONABLE – Shop</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
     }
-  }
-</style>
+
+    header {
+      background-color: #000;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #fff;
+    }
+
+    nav {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .product {
+      background-color: #222;
+      border: 1px solid #333;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .product img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .product h3 {
+      color: #fff;
+      margin: 15px 0 5px;
+    }
+
+    .product p {
+      color: #aaa;
+      margin: 5px 0 15px;
+    }
+
+    .product a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #fff;
+      color: #000;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: #000;
+      color: #777;
+      margin-top: 50px;
+    }
+  </style>
 </head>
 <body>
-<header>
-  <h1>Fashionable</h1>
-  <p>Your go-to dropshipping & affiliate store</p>
-</header>
 
-<main>
-  <section class="products">
-    <div class="product">
-      <img src="https://via.placeholder.com/300x300?text=Product+1" alt="Product 1" />
-      <h3>Stylish Sunglasses</h3>
-      <p>Trendy sunglasses for every occasion.</p>
-      <a href="https://www.amazon.com/Nike-Short-Sleeve-Shirt-Medium/dp/B08WTG63BD/ref=sr_1_1?crid=FHS4IFBNIOVA&dib=eyJ2IjoiMSJ9.Nz2AVbt9QbFndvb7dzdAq646gatdBI-GbqD_D9Xi9aMUL1M3wKDVhWKyEIvxfx6SUCicWP4bMgAV9yBfLCGg3kjCgOdJr5W7AtgySseBqLbmuk3Xe2nVLim3W03GRxv38jnFqEZRn_IyXakwp47hX_Gq3drm8TxB_uyP_N-Z2Eh2vWXflZl9MXrHQu9nW5ndF42jgtVZVluef_eQMxO38DqnFbIP3F82vQsFfuk2Mnu8HGP8sKmIqS6aRQ2XLNm0OZBj9XH85nlQqN0XhQwz50VEQP3tGX9PSW7VU18Lwfo.n-xg6n6WDXEfpsYI_ctJVZjPlFM5db57mrRJVHkZws8&dib_tag=se&keywords=nike%2Bshirt&qid=1750890805&sprefix=nike%2Bshir%2Caps%2C262&sr=8-1&th=1&psc=1" target="_blank" rel="noopener noreferrer">Buy Now</a>
+  <header>
+    <h1>FASHIONABLE</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#contact">Contact</a>
+  <a href="#shoes">Shoes</a>
+  <a href="#tops">Tops</a>
+  <a href="#accessories">Accessories</a>
+</nav>
+
+    </nav>
+  </header>
+
+  <div class="container" id="shop">
+    <h2 style="color:#ccc; text-align:center;">Featured Products</h2>
+    <div class="product-grid">
+      
+      <!-- Product 1 -->
+      <div class="product">
+        <img src="https://itsfashionable.github.io/fashionable/images/" alt="Black Hoodie">
+        <h3>Black Hoodie</h3>
+        <p>$39.99</p>
+        <a href="https://amazon.com/dp/YOUR_PRODUCT?tag=youraffiliateid" target="_blank">Buy on Amazon</a>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product">
+        <img src="collaredshirt.webp" alt="Grey Joggers">
+        <h3>Grey Joggers</h3>
+        <p>$29.99</p>
+        <a href="https://www.aliexpress.us/item/3256808003484266.html?spm=a2g0o.productlist.main.3.6e35tQNktQNkRf&algo_pvid=8f0e0ac6-0f0e-4378-8d3b-10f43d61af2b&algo_exp_id=8f0e0ac6-0f0e-4378-8d3b-10f43d61af2b-2&pdp_ext_f=%7B%22order%22%3A%222%22%2C%22eval%22%3A%221%22%7D&pdp_npi=4%40dis%21USD%2152.47%214.99%21%21%2152.47%214.99%21%402101c71a17508929418486599e0442%2112000044176381843%21sea%21US%216404585758%21ABX&curPageLogUid=KNTalCSG9wXQ&utparam-url=scene%3Asearch%7Cquery_from%3A" target="_blank">Buy on AliExpress</a>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product">
+        <img src="https://via.placeholder.com/250x300?text=Sneakers" alt="White Sneakers">
+        <h3>White Sneakers</h3>
+        <p>$59.99</p>
+        <a href="https://example.com/your-affiliate-link" target="_blank">Buy Now</a>
+      </div>
+ 
+      <!-- Product 4 -->
+  <div class="product">
+    <img src="images/white-tshirt.jpg" alt="White T-Shirt">
+    <h3>White T-Shirt</h3>
+    <p>$19.99</p>
+    <a href="https://your-affiliate-link.com/tshirt" target="_blank">Buy on ASOS</a>
     </div>
+  </div>
 
-    <div class="product">
-      <img src="https://via.placeholder.com/300x300?text=Product+2" alt="Product 2" />
-      <h3>Leather Wallet</h3>
-      <p>Premium quality and sleek design.</p>
-      <a href="https://affiliate-link2.com" target="_blank" rel="noopener noreferrer">Buy Now</a>
-    </div>
+  <footer id="contact">
+    <p>Contact: your@email.com | Instagram: @fashionable.store</p>
+  </footer>
 
-    <div class="product">
-      <img src="https://via.placeholder.com/300x300?text=Product+3" alt="Product 3" />
-      <h3>Classic Watch</h3>
-      <p>Timeless accessory for fashion lovers.</p>
-      <a href="https://affiliate-link3.com" target="_blank" rel="noopener noreferrer">Buy Now</a>
-    </div>
-  </section>
-</main>
-
-<footer>
-  &copy; 2025 Fashionable. All rights reserved.
-</footer>
 </body>
+
+<meta name="fo-verify" content="c6a50c41-2b83-43c3-a54f-5b6f8e8a9c1c" />
+
 </html>
-
-
-
-<a href="https://www.amazon.com/dp/B08XYZ/?tag=youraffiliateid" target="_blank">
-  <button>Buy Now</button>
-</a>
